@@ -1,0 +1,136 @@
+/* Estilo global do body para garantir consistência */
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: 'Chakra Petch', sans-serif;
+  background-color: #f0f0f0; /* Cor de fundo geral */
+}
+
+/* Estilo para a seção principal */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+/* Imagem de um presente na página */
+.page__image {
+  width: 200px;
+  margin-top: 20px;
+}
+
+/* Container principal */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+/* Detalhe no canto da página */
+.content__corner-rectangle {
+  width: 50px;
+  height: 50px;
+  background-color: #1875E8; /* Cor do detalhe */
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* Conteúdo principal da página */
+.content__main {
+  background-color: #fff; /* Cor de fundo */
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra */
+  padding: 20px;
+  margin-top: 50px;
+}
+
+/* Estilo para títulos de seção */
+.section__title {
+  font-size: 2rem;
+  color: #333; /* Cor do título */
+}
+
+/* Estilo para o formulário de adição e sorteio */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Estilo para rótulos do formulário */
+.form__label {
+  font-size: 1.2rem;
+  color: #555; /* Cor do rótulo */
+}
+
+/* Estilo para campos de entrada do formulário */
+.form__input {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ddd; /* Cor da borda do campo */
+  border-radius: 5px;
+}
+
+/* Estilo para botões do formulário */
+.form__buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Estilo para links no formulário */
+.form__link {
+  font-size: 1rem;
+  color: #1875E8; /* Cor do link */
+  cursor: pointer;
+}
+
+/* Estilo para a seção de resultados (amigos incluídos e sorteio) */
+.section--results {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Estilo para os artigos dentro da seção de resultados */
+.article {
+  flex: 1;
+  text-align: center;
+}
+
+/* Estilo para os títulos dos artigos */
+.friends__title,
+.prizeDraw__title {
+  font-size: 1.5rem;
+  color: #333; /* Cor do título */
+}
+
+/* Estilo para os containers de lista (amigos incluídos e sorteio) */
+.friends__container,
+.prizeDraw__container {
+  max-height: 150px;
+  overflow-y: auto;
+  border: 1px solid #ddd; /* Cor da borda do container */
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  background-color: #f9f9f9; /* Cor de fundo do container */
+}
+
+/* Estilo para o detalhe de fundo */
+.background__detail {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('./assets/background-detail.png') repeat; /* Imagem de fundo */
+  pointer-events: none; /* Não interfere com eventos do mouse */
+  z-index: -1; /* Coloca atrás do conteúdo principal */
+}
